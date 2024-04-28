@@ -6,10 +6,11 @@ import About from "./views/AboutProduct.jsx";
 import Tester from "./views/BecomeTester.jsx";
 import Law from "./views/Law.jsx";
 import Contact from "./views/Contact.jsx";
-
+import ScrollToTop from "./ScrollToTop.js";
 export default function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <Routes>
         <Route path="/" element={<Root />} />
         <Route path="o-produkcie" element={<About />} />

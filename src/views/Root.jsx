@@ -2,6 +2,9 @@ import "../App.css";
 import Navbar from "../components/Navbar/Navbar";
 import HeroSection from "../components/HeroSection/HeroSection";
 import RightImageSection from "../components/RightImageSection/RightImageSection";
+import CtaSection from "../components/CtaSection/CtaSection";
+import Faq from "../components/Faq/Faq";
+import Footer from "../components/Footer/Footer";
 function App() {
   /**
  * Navbar.propTypes = {
@@ -22,6 +25,9 @@ function App() {
       />
       <HeroSection />
       <RightImageSection />
+      <CtaSection />
+      <Faq/>
+      <Footer />
     </>
   );
 }

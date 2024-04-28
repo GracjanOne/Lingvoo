@@ -18,7 +18,8 @@ const Text = styled.span`
   position: absolute;
   margin-left: auto;
   margin-right: auto;
-  top: 30%;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   text-align: center;
@@ -26,11 +27,28 @@ const Text = styled.span`
   z-index: 10;
   color: white;
   width: 90%;
+  @media screen and (max-width: 550px){
+    font-size: 2rem;
+  }
 `;
 const H2 = styled.h2`
     font-size: 6.4rem;
     margin-bottom: 1%;
+    @media screen and (max-width: 550px){
+    font-size: 5rem;
+  }
+  @media screen and (max-width: 400px){
+    font-size: 4rem;
+  }
+`
+const ButtonDiv = styled.div`
+  @media screen and (max-width: 900px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5%;
     
+  }
 `
 
 const HeroSection = () => {
@@ -43,7 +61,9 @@ const HeroSection = () => {
             Przenieś się do świata języków za pomocą AR i VR i naucz się w
             sposób interaktywny i angażujący.
           </span>
-            <div style={{marginTop: "1%"}}><Button white biggerFont>Dowiedz się więcej</Button> <Button transparent fontWhite biggerFont>Zostań beta-testerem</Button></div>
+            <ButtonDiv style={{marginTop: "1%"}}>
+              <Button responsive white biggerFont>Dowiedz się więcej</Button> <Button transparent responsive fontWhite biggerFont>Zostań beta-testerem</Button>
+            </ButtonDiv>
         </Text>
         <Img src={backgroundImage} alt="" />
       </ImageBackground>

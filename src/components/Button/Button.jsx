@@ -9,6 +9,8 @@ class Button extends React.Component{
             black,
             fontWhite,
             biggerFont,
+            small,
+            responsive,
             children,
         } = this.props
 
@@ -17,9 +19,14 @@ class Button extends React.Component{
             color:  ${fontWhite ? "white" : "black"};
             background-color: ${white ? "#fff" : black ? "#000" : "transparent"};
             font-size: ${biggerFont ? "2rem" : "1.6rem"};
-            width: 23.5rem;
+            width: ${small ? "16rem" : "23.5rem"};
             height: 4.5rem;
             cursor: pointer;
+            @media screen and (max-width: 900px){
+                width: ${responsive ? "95vw" : ""};
+                margin-top: ${responsive ? "2%" : ""};
+
+            }
         `
         return(
             <>
@@ -34,6 +41,8 @@ Button.propTypes={
     black: PropTypes.bool,
     fontWhite: PropTypes.bool,
     biggerFont: PropTypes.bool,
+    small: PropTypes.bool,
+    responsive: PropTypes.bool,
     children: PropTypes.node.isRequired,
 }
 export default Button;

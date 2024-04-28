@@ -113,7 +113,7 @@ class Navbar extends Component {
     text-decoration: none;
     font-family: ${font};
     font-weight: 500;
-    
+    cursor: pointer;
     @media screen and (max-width: 900px) {
       display: none;
     }
@@ -130,6 +130,10 @@ class Navbar extends Component {
         width: 100%;
         margin: 0;
       }
+      @media screen and (max-width: 900px){
+        width: 95%;
+        margin: auto;
+      }
     `;
 
     const StyledNav = styled.nav`
@@ -140,6 +144,7 @@ class Navbar extends Component {
       width: 100%;
       
       z-index: 1000000000000000000;
+      
     `;
 
     const Image = styled.h1`
