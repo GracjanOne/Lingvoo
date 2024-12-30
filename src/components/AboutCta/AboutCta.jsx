@@ -9,7 +9,9 @@ const Wrapper = styled.section`
 
   position: relative;
   overflow: hidden;
- 
+  @media screen and (max-width:900px){
+    height: 320px;
+  }
 `;
 const Img = styled.img`
   height: 100%;
@@ -58,6 +60,16 @@ class AboutCta extends React.Component {
     ;
     @media screen and (min-width: 520px) and (max-width: 900px){
       width: 80%;
+    }
+    @media screen and (max-width: 520px){
+      h3{
+        font-size: 3.2rem;
+        padding: 0 2%;
+      }
+      span{
+        padding: 0 2%;
+        font-size: 1.4rem;
+      }
     }
   }
   `;

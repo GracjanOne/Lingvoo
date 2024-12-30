@@ -62,10 +62,10 @@ const HeroSection = () => {
             sposób interaktywny i angażujący.
           </span>
             <ButtonDiv style={{marginTop: "1%"}}>
-              <Button responsive white biggerFont>Dowiedz się więcej</Button> <Button transparent responsive fontWhite biggerFont>Zostań beta-testerem</Button>
+              <Button link="/o-produkcie" responsive white biggerFont>Dowiedz się więcej</Button> <Button link="/zostan-testerem" transparent responsive fontWhite biggerFont>Zostań beta-testerem</Button>
             </ButtonDiv>
         </Text>
-        <Img src={backgroundImage} alt="" />
+        <Img rel="preload" src={backgroundImage} alt="" />
       </ImageBackground>
     </>
   );

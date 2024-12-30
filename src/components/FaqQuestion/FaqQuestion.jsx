@@ -22,7 +22,7 @@ const Title = styled.div`
 const Wrapper = styled.div`
   margin: 0.2% auto;
   @media screen and (max-width: 900px){
-    margin: 1% auto;
+    margin: 1.3% auto;
   }
   @media screen and (max-width: 450px){
     margin: 2% auto;
@@ -67,7 +67,7 @@ const FaqQuestion = ({ title, children }) => {
     <Wrapper>
       <Title>
         {title}
-        <Button onClick={handleClick}>
+        <Button aria-label="arrow" onClick={handleClick}>
           <animated.div style={arrowSpin}>
             <Arrow src={arrow} alt="" />
           </animated.div>

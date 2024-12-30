@@ -7,14 +7,13 @@ const Wrapper = styled.section`
   align-items: center;
   @media screen and (max-width: 900px) {
     flex-wrap: wrap;
+    margin: 10% 0;
   }
 `;
 const Title = styled.span`
   font-size: 4.8rem;
   font-weight: bold;
-  @media screen and (max-width: 400px) {
-    text-align: center;
-  }
+ 
 `;
 const LeftWrapper = styled.div`
   display: flex;
@@ -24,16 +23,22 @@ const LeftWrapper = styled.div`
   margin-right: 5%;
   gap: 7%;
   @media screen and (max-width: 900px) {
-    width: 95vw;
+    width: 90vw;
     margin: auto;
     margin-bottom: 2%;
   }
   @media screen and (min-width: 900px) and (max-width: 1200px) {
     transform: scale(0.9);
   }
-  @media screen and (max-width: 400px) {
-    text-align: center;
+  @media screen and (max-width:520px) {
+    span{
+      font-size: 3.8rem;
+    }
+    p{
+      font-size: 1.4rem;
+    }
   }
+  
 `;
 
 const Img = styled.img`

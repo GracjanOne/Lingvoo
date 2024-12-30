@@ -9,7 +9,7 @@ margin-top: 5%;
 
   @media screen and (max-width:900px){
    flex-wrap: wrap;
-  
+   
 }
 `;
 const Title = styled.span`
@@ -27,7 +27,7 @@ const LeftWrapper = styled.div`
     margin-right: 5%;
     gap: 7%;
     @media screen and (max-width:900px){
-   width: 95vw;
+   width: 90vw;
    margin: auto;
    margin-bottom: 2%;
    
@@ -49,7 +49,7 @@ const Img = styled.img`
   width: 50%;
 }
 @media screen and (max-width:900px){
-  width: 95vw;
+  width: 90vw;
 }
 `
 const RightImageSection = () => {
@@ -59,7 +59,7 @@ const RightImageSection = () => {
         <Logo src={logo} alt="Lingvoo logo" />
         <Title>Poznaj zespół stojący za firmą</Title>
         <p>Jesteśmy zespołem pasjonatów języków, którzy wykorzystują technologię rzeczywistości rozszerzonej i wirtualnej, aby stworzyć niezwykłe doświadczenie nauki języka. Nasza platforma przenosi uczących się języków poza tradycyjną salę lekcyjną i przenosi ich do realistycznych sytuacji, w których mogą praktykować język docelowy w naturalny i interaktywny sposób. </p>
-        <div><Button biggerFont transparent responsive>Skontaktuj się z nami</Button></div>
+        <div><Button link="/kontakt" biggerFont transparent responsive>Skontaktuj się z nami</Button></div>
       </LeftWrapper>
       <Img src={team} alt="" />
     </Wrapper>

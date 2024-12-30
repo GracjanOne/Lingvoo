@@ -9,8 +9,8 @@ const Wrapper = styled.section`
   margin-top: 5%;
   position: relative;
   overflow: hidden;
-  @media screen and (max-width: 520px){
-    
+  @media screen and (max-width: 820px){
+    margin: 10% 0;
     height: 80%;
   }
 `;
@@ -58,7 +58,7 @@ class CtaSection extends React.Component {
     top: 45%;
     transform: translateY(-50%);
     @media screen and (max-width: 900px) {
-    left: 50%;
+    left: 53%;
     top: 50%;
     transform: translate(-50%, -50%);
     ;
@@ -75,7 +75,7 @@ class CtaSection extends React.Component {
             Doświadcz języka w pełni immersyjnym środowisku wirtualnym. Zapisz
             się na bezpłatną wersję próbną już teraz!
           </Additional>
-          <Button small white>
+          <Button link="/kontakt" small white>
             Zapisz się
           </Button>
         </Text>

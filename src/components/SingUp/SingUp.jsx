@@ -10,6 +10,7 @@ const Wrapper = styled.section`
   width: 90vw;
   margin: auto;
   flex-wrap: wrap;
+  margin-top: 10%;
 `;
 const Header = styled.header`
   font-size: 3.6rem;

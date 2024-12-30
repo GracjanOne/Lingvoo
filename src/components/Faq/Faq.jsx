@@ -88,11 +88,11 @@ const Faq = () => {
         internetową Lingvoo lub skontaktuj się z zespołem platformy, aby uzyskać
         więcej informacji. Lingvoo: Otwórz drzwi do świata języków!
       </FaqQuestion>
-      <Title style={{fontSize: "3.2rem", marginTop: "2.5%"}}>Masz inne pytanie?</Title>
+      <Title style={{fontSize: "3.2rem", marginTop: "5%"}}>Masz inne pytanie?</Title>
       <Additional>
         Skontaktuj się z nami
       </Additional>
-      <Button transparent>Napisz do nas</Button>
+      <Button link="/kontakt" transparent>Napisz do nas</Button>
     </Wrapper>
   );
 };

@@ -60,8 +60,13 @@ class Navbar extends Component {
       padding: 0 3vw;
       list-style: none;
      
-      margin-bottom: ${window.innerWidth < 960 ? "20px" : "0"};
-      font-size: ${window.innerWidth < 960 ? "1.2rem" : "1.7rem"};
+      margin-bottom: ${window.innerWidth < 900 ? "20px" : "0"};
+      a{
+        span{
+          font-size:  1.7rem;
+        }
+      }
+      
       @media screen and (min-width:900px){
         display: inline;
       }
@@ -82,7 +87,7 @@ class Navbar extends Component {
       background: "none",
       border: "none",
       cursor: "pointer",
-      display: window.innerWidth > 960 ? "none" : "block"
+      display: window.innerWidth > 900 ? "none" : "block"
     };
 
     const Ul = styled.ul`
@@ -108,7 +113,7 @@ class Navbar extends Component {
     border: none;
     background-color: black;
     color: white;
-    padding: 10% 20%;  
+    padding: 15% 35%;  
     font-size: 2rem;
     text-decoration: none;
     font-family: ${font};
@@ -212,7 +217,7 @@ class Navbar extends Component {
             <Link style={{textDecoration: "none"}} to={"/"}>
               <Image>Lingvoo</Image>
             </Link>
-            {window.innerWidth > 960 ? (
+            {window.innerWidth > 900 ? (
               alignment === "space-around" ? (
                 <>
                    <Li>

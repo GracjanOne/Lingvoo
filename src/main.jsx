@@ -6,6 +6,7 @@ import About from "./views/AboutProduct.jsx";
 import Tester from "./views/BecomeTester.jsx";
 import Law from "./views/Law.jsx";
 import Contact from "./views/Contact.jsx";
+import TermsOfService from "./views/TermsOfService.jsx";
 import ScrollToTop from "./ScrollToTop.js";
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="zostan-testerem" element={<Tester />} />
         <Route path="informacje-prawne" element={<Law />} />
         <Route path="kontakt" element={<Contact />} />
+        <Route path="regulamin" element={<TermsOfService />} />
       </Routes>
     </BrowserRouter>
   );

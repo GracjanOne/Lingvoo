@@ -9,7 +9,9 @@ const Wrapper = styled.section`
 
   position: relative;
   overflow: hidden;
- 
+  @media screen and (max-width:900px){
+    height: 350px;
+  }
 `;
 const Img = styled.img`
   height: 100%;
@@ -47,6 +49,9 @@ const ButtonDiv = styled.div`
     
   }
 `
+const handleClick = () => {
+  alert("Ta witryna to tylko przykład strony, nie da sie zapisać na beta testy")
+}
 class TesterCta extends React.Component {
   render() {
     const { left } = this.props;
@@ -77,7 +82,7 @@ class TesterCta extends React.Component {
           <Additional>
           Zapisz się na beta-testy i sprawdź nasz produkt przed oficjalnym wydanem.
           </Additional>
-          <ButtonDiv><Button fontWhite transparent responsive>Zapisz się</Button></ButtonDiv>
+          <ButtonDiv><Button click handler={handleClick} fontWhite transparent responsive>Zapisz się</Button></ButtonDiv>
         </Text>
         
         <Img src={bg} alt="" />

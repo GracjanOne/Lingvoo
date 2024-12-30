@@ -4,18 +4,18 @@ import Button from "../Button/Button";
 const Wrapper = styled.section`
   margin-top: 5%;
   display: flex;
+  
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 900px) {
     flex-wrap: wrap;
+    margin: 10% 0;
   }
 `;
 const Title = styled.span`
   font-size: 4.8rem;
   font-weight: bold;
-  @media screen and (max-width: 400px) {
-    text-align: center;
-  }
+ 
 `;
 const LeftWrapper = styled.div`
   display: flex;
@@ -25,16 +25,14 @@ const LeftWrapper = styled.div`
   margin-right: 5%;
   gap: 7%;
   @media screen and (max-width: 900px) {
-    width: 95vw;
+    width: 90vw;
     margin: auto;
     margin-bottom: 2%;
   }
   @media screen and (min-width: 900px) and (max-width: 1200px) {
     transform: scale(0.9);
   }
-  @media screen and (max-width: 400px) {
-    text-align: center;
-  }
+  
 `;
 
 const Video = styled.video`
@@ -48,6 +46,11 @@ const Video = styled.video`
     width: 95vw;
   }
 `;
+const Div = styled.div`
+  @media screen and (max-width:900px){
+    text-align : center;
+  }
+`
 const VideoSection = () => {
   return (
     <Wrapper>
@@ -65,11 +68,11 @@ const VideoSection = () => {
           to przyszłość nauki języków obcych - spróbuj już dziś i przekonaj się
           sam!
         </p>
-        <div>
-          <Button biggerFont transparent responsive>
+        <Div>
+          <Button link="/zostan-testerem" biggerFont transparent responsive>
             Wypróbuj
           </Button>
-        </div>
+        </Div>
       </LeftWrapper>
       <Video controls src={video}>
         {" "}

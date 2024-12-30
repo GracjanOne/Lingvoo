@@ -11,9 +11,7 @@ const Header = styled.header`
 const Additional = styled.span`
   font-size: 1.6rem;
 `;
-const UpperContainer = styled.div`
-  width: 50%;
-`;
+
 const Number = styled.span`
   font-size: 4rem;
   font-weight: bold;
@@ -32,7 +30,7 @@ const ElementWrapper = styled.div`
   width: 400px;
 `;
 const BottomContainer = styled.div`
-  margin-top: 2%;
+  margin-top: 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -41,14 +39,14 @@ const BottomContainer = styled.div`
 const HowItWorks = () => {
   return (
     <Wrapper>
-      <UpperContainer>
+      <div>
         <Header>Jak to działa - krok po kroku</Header>
         <Additional>
           Nasz produkt zapewnia interaktywne i immersyjne doświadczenia
           językowe, które pomagają użytkownikom osiągnąć płynność w nauce
           języka.
         </Additional>
-      </UpperContainer>
+      </div>
       <BottomContainer>
         <ElementWrapper>
           <Number>1.</Number>
@@ -76,7 +74,7 @@ const HowItWorks = () => {
           </Desc>
         </ElementWrapper>
       </BottomContainer>
-      <Button transparent>Dowiedz się więcej</Button>
+      <Button link="/kontakt" transparent>Dowiedz się więcej</Button>
     </Wrapper>
   );
 };

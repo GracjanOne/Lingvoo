@@ -1,4 +1,4 @@
-// <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d10922819.118841141!2d-8.89887459396634!3d48.05805487733189!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1714334538214!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 import styled from "styled-components";
 
 const Wrapper = styled.section`
@@ -8,7 +8,7 @@ const Wrapper = styled.section`
  margin: 2% auto;
  @media screen and (max-width: 1220px){
     flex-direction: column;
-    
+    margin: 10% auto;
  }
 `
 const Header = styled.header`

@@ -25,7 +25,7 @@ const Law = () => (
 
         <P>
           Lingvoo jest fikcyjną stroną internetową, stworzoną jako przykładowy
-          projekt przez Gracjana Zalewskiego, web developera. Wszelkie
+          projekt przez Gracjana Zalewskiego. Wszelkie
           podobieństwa do rzeczywistych osób, miejsc, zdarzeń lub organizacji są
           całkowicie przypadkowe i niezamierzone.
         </P>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const Header = styled.h4`
     font-size: 2.6rem;
     text-align: center;
@@ -31,6 +31,10 @@ const A = styled.a`
     color: black;
     font-size: 1.6rem;
 `
+const StyledLink = styled(Link)`
+    color: black;
+    font-size: 1.6rem;
+`
 const Footer = () =>{
     return(
         <FooterSection>
@@ -38,9 +42,9 @@ const Footer = () =>{
             <Line></Line>
             <Center>
                 <span style={{fontSize: "1.6rem"}}>Lingvoo &copy;</span>
-                <A href="">Design & Development</A>
-                <A href="">Źródła zdjęć</A>
-                <A href="">Regulamin</A>
+                <A href="https://zalewskiweb.pl">Design & Development</A>
+                <StyledLink to="/regulamin">Źródła zdjęć</StyledLink>
+                <StyledLink to="/regulamin">Regulamin</StyledLink>
             </Center>
         </FooterSection>
     )
